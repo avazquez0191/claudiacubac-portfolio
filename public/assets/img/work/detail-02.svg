@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500">
+  <!-- PLACEHOLDER — replace with real project image -->
+  <rect width="1200" height="1500" fill="#FFFFFF"/>
+  <text x="120" y="210" font-family="Helvetica, Arial, sans-serif" font-size="22" letter-spacing="6" fill="#8B8C8F">PRIMARY TYPEFACE</text>
+  <text x="1080" y="210" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="22" letter-spacing="6" fill="#8B8C8F">01</text>
+  <rect x="120" y="250" width="960" height="2" fill="#E0E0DC"/>
+  <text x="100" y="860" font-family="Georgia, 'Times New Roman', serif" font-size="620" letter-spacing="-20" fill="#1C2B4A">Aa</text>
+  <circle cx="1000" cy="430" r="48" fill="#C1121F"/>
+  <g font-family="Georgia, 'Times New Roman', serif" font-size="58" fill="#1C2B4A">
+    <text x="120" y="1060">ABCDEFGHIJKLMN</text>
+    <text x="120" y="1140">OPQRSTUVWXYZ</text>
+    <text x="120" y="1220" fill="#5B5F69">abcdefghijklmn</text>
+    <text x="120" y="1300" fill="#5B5F69">opqrstuvwxyz 0123456789</text>
+  </g>
+</svg>

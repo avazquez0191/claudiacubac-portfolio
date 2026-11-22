@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Update the domain if it changes, and add/remove a <url> per project in data.js -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://claudiaccabrera.com/</loc></url>
+  <url><loc>https://claudiaccabrera.com/project?p=almendra</loc></url>
+  <url><loc>https://claudiaccabrera.com/project?p=norte</loc></url>
+  <url><loc>https://claudiaccabrera.com/project?p=lumen</loc></url>
+  <url><loc>https://claudiaccabrera.com/project?p=cine-sur</loc></url>
+  <url><loc>https://claudiaccabrera.com/project?p=oda</loc></url>
+  <url><loc>https://claudiaccabrera.com/project?p=marea</loc></url>
+</urlset>

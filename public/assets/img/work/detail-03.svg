@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500">
+  <!-- PLACEHOLDER — replace with real project image -->
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#1C2B4A" flood-opacity=".16"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="1500" fill="#ECECEA"/>
+  <!-- letterhead -->
+  <g transform="rotate(-4 490 725)" filter="url(#shadow)">
+    <rect x="210" y="330" width="560" height="790" fill="#FFFFFF"/>
+    <circle cx="262" cy="392" r="16" fill="#C1121F"/>
+    <rect x="590" y="384" width="140" height="6" fill="#C9C9C4"/>
+    <rect x="620" y="400" width="110" height="6" fill="#C9C9C4"/>
+    <g fill="#E0E0DC">
+      <rect x="250" y="520" width="480" height="8"/>
+      <rect x="250" y="548" width="460" height="8"/>
+      <rect x="250" y="576" width="470" height="8"/>
+      <rect x="250" y="604" width="300" height="8"/>
+      <rect x="250" y="660" width="480" height="8"/>
+      <rect x="250" y="688" width="440" height="8"/>
+      <rect x="250" y="716" width="470" height="8"/>
+      <rect x="250" y="744" width="220" height="8"/>
+    </g>
+    <path d="M250 880 q30 -40 60 0 t60 0 t40 -10" fill="none" stroke="#1C2B4A" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <!-- envelope -->
+  <g transform="rotate(6 780 1050)" filter="url(#shadow)">
+    <rect x="480" y="880" width="600" height="340" fill="#1C2B4A"/>
+    <path d="M480 880 L780 1060 L1080 880" fill="none" stroke="#FAFAF8" stroke-opacity=".18" stroke-width="3"/>
+    <rect x="530" y="1140" width="160" height="6" fill="#FAFAF8" opacity=".5"/>
+  </g>
+  <!-- business card -->
+  <g transform="rotate(10 870 480)" filter="url(#shadow)">
+    <rect x="700" y="380" width="340" height="200" rx="4" fill="#C1121F"/>
+    <text x="740" y="490" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="64" fill="#FAFAF8">cc</text>
+    <rect x="740" y="525" width="120" height="5" fill="#FAFAF8" opacity=".6"/>
+  </g>
+</svg>

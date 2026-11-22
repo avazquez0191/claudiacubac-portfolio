@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500">
+  <!-- PLACEHOLDER — replace with real project image -->
+  <rect width="1200" height="1500" fill="#F4E7E4"/>
+  <circle cx="600" cy="660" r="230" fill="#C1121F"/>
+  <g transform="rotate(28 600 660)">
+    <ellipse cx="600" cy="660" rx="72" ry="128" fill="#FAFAF8"/>
+    <path d="M600 548 Q 578 660 600 772" fill="none" stroke="#C1121F" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <text x="600" y="1010" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="104" fill="#1C2B4A">almendra</text>
+  <text x="600" y="1078" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" letter-spacing="10" fill="#1C2B4A" opacity=".7">OBRADOR · DESDE 1987</text>
+</svg>

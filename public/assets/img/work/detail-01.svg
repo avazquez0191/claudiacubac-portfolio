@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
+  <!-- PLACEHOLDER — replace with real project image -->
+  <rect width="1600" height="1000" fill="#F4F4F2"/>
+  <g>
+    <rect x="140" y="160" width="244" height="560" rx="6" fill="#1C2B4A"/>
+    <rect x="409" y="160" width="244" height="560" rx="6" fill="#C1121F"/>
+    <rect x="678" y="160" width="244" height="560" rx="6" fill="#F4E7E4"/>
+    <rect x="947" y="160" width="244" height="560" rx="6" fill="#E4E9F1"/>
+    <rect x="1216" y="160" width="244" height="560" rx="6" fill="#FFFFFF" stroke="#E0E0DC" stroke-width="2"/>
+  </g>
+  <g font-family="Georgia, 'Times New Roman', serif" font-size="34">
+    <text x="164" y="690" fill="#FAFAF8">Navy</text>
+    <text x="433" y="690" fill="#FAFAF8">Cereza</text>
+    <text x="702" y="690" fill="#1C2B4A">Blush</text>
+    <text x="971" y="690" fill="#1C2B4A">Mist</text>
+    <text x="1240" y="690" fill="#1C2B4A">Paper</text>
+  </g>
+  <g font-family="Helvetica, Arial, sans-serif" font-size="20" letter-spacing="2" fill="#5B5F69">
+    <text x="140" y="775">#1C2B4A</text>
+    <text x="409" y="775">#C1121F</text>
+    <text x="678" y="775">#F4E7E4</text>
+    <text x="947" y="775">#E4E9F1</text>
+    <text x="1216" y="775">#FFFFFF</text>
+  </g>
+  <text x="140" y="880" font-family="Helvetica, Arial, sans-serif" font-size="18" letter-spacing="6" fill="#8B8C8F">COLOUR PALETTE — PRIMARY &amp; SECONDARY</text>
+</svg>

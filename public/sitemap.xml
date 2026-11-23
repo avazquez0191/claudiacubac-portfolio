@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Update the domain if it changes, and add/remove a <url> per project in data.js -->
+<!-- One <url> per project in assets/js/data.js -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://claudiacubac.com/</loc></url>
-  <url><loc>https://claudiacubac.com/project?p=almendra</loc></url>
-  <url><loc>https://claudiacubac.com/project?p=norte</loc></url>
-  <url><loc>https://claudiacubac.com/project?p=lumen</loc></url>
-  <url><loc>https://claudiacubac.com/project?p=cine-sur</loc></url>
-  <url><loc>https://claudiacubac.com/project?p=oda</loc></url>
-  <url><loc>https://claudiacubac.com/project?p=marea</loc></url>
+  <url><loc>https://claudiacubac.com/project?p=cuendias</loc></url>
+  <url><loc>https://claudiacubac.com/project?p=seisa-identity</loc></url>
+  <url><loc>https://claudiacubac.com/project?p=seisa-30</loc></url>
+  <url><loc>https://claudiacubac.com/project?p=seisa-transforma</loc></url>
+  <url><loc>https://claudiacubac.com/project?p=cubadeportes</loc></url>
+  <url><loc>https://claudiacubac.com/project?p=estampa</loc></url>
+  <url><loc>https://claudiacubac.com/project?p=la-reserva</loc></url>
+  <url><loc>https://claudiacubac.com/project?p=ohlala</loc></url>
+  <url><loc>https://claudiacubac.com/project?p=mr-crypto</loc></url>
+  <url><loc>https://claudiacubac.com/project?p=que-bola</loc></url>
+  <url><loc>https://claudiacubac.com/project?p=ritmo</loc></url>
+  <url><loc>https://claudiacubac.com/project?p=viera</loc></url>
+  <url><loc>https://claudiacubac.com/project?p=torreon</loc></url>
 </urlset>

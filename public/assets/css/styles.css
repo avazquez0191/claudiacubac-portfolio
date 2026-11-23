@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Claudia C. Cabrera — Portfolio
+   Claudia Cuba — Portfolio
    Palette: white / warm grays / cereza red / dark blue
    ========================================================================== */
 
@@ -554,8 +554,6 @@ ul, ol { padding: 0; list-style: none; }
   border-radius: var(--radius);
   background: var(--gray-100);
 }
-.work-card:nth-child(4n + 2) .work-card__media,
-.work-card:nth-child(4n + 3) .work-card__media { aspect-ratio: 4 / 5; }
 .work-card__media img {
   width: 100%;
   height: 100%;
@@ -604,7 +602,6 @@ ul, ol { padding: 0; list-style: none; }
 @media (max-width: 760px) {
   .work-card,
   .work-card:nth-child(n) { grid-column: 1 / -1; margin-top: 0; }
-  .work-card:nth-child(n) .work-card__media { aspect-ratio: 4 / 5; }
 }
 
 /* --------------------------------------------------------------------------
@@ -617,18 +614,39 @@ ul, ol { padding: 0; list-style: none; }
   align-items: start;
   gap: clamp(2.5rem, 6vw, 6rem);
 }
-.about__portrait { position: sticky; top: calc(var(--header-h) + 2rem); }
+.about__portrait {
+  position: sticky;
+  top: calc(var(--header-h) + 2rem);
+  max-width: 26rem;
+}
+.about__portrait-frame {
+  position: relative;
+}
+.about__portrait-frame::after {
+  /* small cereza dot echoing the logo mark */
+  content: "";
+  position: absolute;
+  top: 6%;
+  right: 6%;
+  width: 11%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--cereza);
+  border: 6px solid var(--gray-50);
+}
 .about__portrait img {
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1;
   object-fit: cover;
-  border-radius: var(--radius);
+  border-radius: 50%;
   background: var(--gray-100);
 }
 .about__portrait figcaption {
   display: flex;
   justify-content: space-between;
-  margin-top: 0.9rem;
+  margin-top: 1.25rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--line);
   font-size: 0.8125rem;
   color: var(--muted);
 }
@@ -828,6 +846,44 @@ ul, ol { padding: 0; list-style: none; }
 .icon-btn:hover { background: var(--paper); border-color: var(--paper); color: var(--navy); }
 .icon-btn svg { width: 1.1rem; height: 1.1rem; }
 
+.recognition__lead {
+  max-width: 24ch;
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4.4vw, 3.75rem);
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+}
+.recognition__lead em { font-style: italic; color: #ff5a63; }
+
+.awards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: clamp(3rem, 6vw, 4.5rem);
+}
+.awards li {
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(250, 250, 248, 0.2);
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+.awards__year {
+  display: block;
+  margin-bottom: 0.75rem;
+  font-size: 0.8125rem;
+  color: #ff5a63;
+  font-variant-numeric: tabular-nums;
+}
+.awards strong { display: block; font-weight: 500; }
+.awards li > span:last-child { color: rgba(250, 250, 248, 0.6); }
+
+@media (max-width: 900px) {
+  .awards { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 520px) {
+  .awards { grid-template-columns: 1fr; }
+}
+
 .clients {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -988,8 +1044,6 @@ ul, ol { padding: 0; list-style: none; }
 
 .project-cover img {
   width: 100%;
-  aspect-ratio: 3 / 2;
-  object-fit: cover;
   border-radius: var(--radius);
   background: var(--gray-100);
 }

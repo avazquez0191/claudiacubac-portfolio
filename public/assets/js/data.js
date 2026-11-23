@@ -1,228 +1,434 @@
 /* ==========================================================================
    SITE CONTENT
    --------------------------------------------------------------------------
-   Everything below is PLACEHOLDER data. Replace it with Claudia's real
-   projects. Each project gets its own case-study page automatically at:
+   Projects from Claudia Cuba's portfolio (2014–2022).
+   Each project gets its own case-study page automatically at:
        project.html?p=<slug>
 
-   Images: put real files in /assets/img/work/ and update the paths.
-   Recommended: JPG or WebP, ~2000px on the long side, under ~400 KB each.
+   Images live in /assets/img/work/<slug>/
+     cover.jpg  → 4:3 image used on the home page card
+     hero.jpg   → large image at the top of the case study
+     01.jpg ... → gallery images
    ========================================================================== */
 
 window.SITE = {
-  name: "Claudia C. Cabrera",
-  timezone: "Europe/Madrid", // used for the "local time" in the contact section
+  name: "Claudia Cuba",
+  // Order of the filter buttons on the home page
+  categories: ["Branding", "Editorial", "Campaign", "Digital", "Typography"],
 };
 
 window.PROJECTS = [
   {
-    slug: "almendra",
-    title: "Almendra Bakery",
-    client: "Almendra Obrador",
-    year: "2026",
+    slug: "cuendias",
+    title: "Cuendias",
+    client: "Superior Institute of Design (ISDi), Cuba",
+    year: "2014",
+    category: "Typography",
+    discipline: "Typeface design",
+    role: "Type designer",
+    services: ["Typeface design", "Regular, Italic & Bold", "Posters"],
+    summary:
+      "ISDi's institutional typeface: a high-performance text face designed to be legible, readable and economical.",
+    cover: "assets/img/work/cuendias/cover.jpg",
+    hero: "assets/img/work/cuendias/hero.jpg",
+    coverAlt: "Cuendias typeface specimen in red over a photo of the ISDi building",
+    description: [
+      {
+        heading: "Overview",
+        text:
+          "Cuendias is the institutional typeface of Havana's Superior Institute of Design (ISDi), created for body text across the school's communication.",
+      },
+      {
+        heading: "The typeface",
+        text:
+          "The family has three styles (Regular, Italic and Bold) and over 200 Cyrillic characters. It was drawn to be legible, comfortable to read over long texts and economical in print.",
+      },
+      {
+        heading: "Recognition",
+        text: "Finalist at Tipos Latinos 2015, the Latin American Biennial of Typography.",
+      },
+    ],
+    gallery: [{ src: "assets/img/work/cuendias/01.jpg", alt: "Three Cuendias posters with letters over Havana architecture", caption: "Posters", wide: true }],
+  },
+  {
+    slug: "seisa-identity",
+    title: "SEISA Corporate Identity",
+    client: "SEISA, Security Services",
+    year: "2018–2020",
     category: "Branding",
-    role: "Brand identity & art direction",
-    services: ["Logo & wordmark", "Visual identity", "Packaging", "Signage"],
+    discipline: "Identity system & brand manual",
+    role: "Lead designer & creative director",
+    services: ["Logo redesign", "Identity system", "Brand manual", "Corporate applications"],
     summary:
-      "A warm, hand-crafted identity for a third-generation family bakery in the heart of the old town.",
-    cover: "assets/img/work/almendra-cover.svg",
-    coverAlt: "Almendra Bakery logo: a white almond inside a cherry-red circle",
+      "Brand redesign for SEISA, an integrated security company: logo, graphic resources, brand manual and corporate applications.",
+    cover: "assets/img/work/seisa-identity/cover.jpg",
+    hero: "assets/img/work/seisa-identity/hero.jpg",
+    coverAlt: "White SEISA logo on an orange background, with the evolution of the logo from 2012 to 2020",
     description: [
       {
-        heading: "The brief",
+        heading: "Overview",
         text:
-          "After 40 years on the same corner, Almendra was opening its second shop. The family wanted an identity that honoured their history while feeling fresh enough to attract a new generation of customers.",
+          "SEISA's identity had been evolving since 2012. The 2018–2020 redesign refined the logo and built a complete identity strategy and system around it.",
       },
       {
-        heading: "The approach",
+        heading: "The system",
         text:
-          "We built the identity around the almond — the ingredient behind their most famous pastry. A soft custom wordmark, a warm palette of blush and cherry, and a modular pattern system flex across bags, boxes, signage and the shop interior.",
+          "The brand manual defines the identifier, colour palette, typography, a photographic code built on masks, a hexagonal pattern and a full icon library for services, systems and processes.",
       },
       {
-        heading: "The outcome",
+        heading: "Applications",
         text:
-          "The new shop opened with queues around the block. The packaging has become a local icon, and the identity system lets the in-house team create seasonal campaigns on their own.",
+          "The identity extends to stationery, uniforms, vehicles, presentations, invitations, bags, notebooks and other corporate and promotional items.",
       },
     ],
     gallery: [
-      { src: "assets/img/work/detail-01.svg", alt: "Colour palette swatches", caption: "Colour palette", wide: true },
-      { src: "assets/img/work/detail-02.svg", alt: "Typeface specimen", caption: "Primary typeface" },
-      { src: "assets/img/work/detail-03.svg", alt: "Stationery suite", caption: "Stationery suite" },
+      { src: "assets/img/work/seisa-identity/01.jpg", alt: "Pages of the SEISA brand manual", caption: "Brand manual", wide: true },
+      { src: "assets/img/work/seisa-identity/02.jpg", alt: "More pages of the SEISA brand manual", caption: "Brand manual", wide: true },
+      { src: "assets/img/work/seisa-identity/03.jpg", alt: "SEISA corporate applications: car, uniforms, stationery and bags", caption: "Corporate applications", wide: true },
     ],
   },
   {
-    slug: "norte",
-    title: "Norte Magazine",
-    client: "Norte Editorial",
-    year: "2025",
-    category: "Editorial",
-    role: "Editorial design & art direction",
-    services: ["Masthead", "Layout system", "Cover design", "Print production"],
-    summary:
-      "A full redesign of an independent quarterly about architecture, slow travel and the culture of the north.",
-    cover: "assets/img/work/norte-cover.svg",
-    coverAlt: "Norte Magazine issue 07 cover with a red circle",
-    description: [
-      {
-        heading: "The brief",
-        text:
-          "Norte had grown from a fanzine into a respected quarterly, but its layout hadn't grown with it. The editors needed a system that felt calm and generous and could carry long-form writing with ease.",
-      },
-      {
-        heading: "The approach",
-        text:
-          "A new serif masthead, a 12-column grid with plenty of white space, and a strict two-typeface hierarchy. Each issue's cover uses one bold geometric shape, which makes the series instantly recognisable on the newsstand.",
-      },
-      {
-        heading: "The outcome",
-        text:
-          "Subscriptions rose 38% in the first year after the redesign, and the magazine is now stocked in independent bookshops across 12 countries.",
-      },
-    ],
-    gallery: [
-      { src: "assets/img/work/detail-04.svg", alt: "Graphic pattern", caption: "Section opener pattern", wide: true },
-      { src: "assets/img/work/detail-02.svg", alt: "Typeface specimen", caption: "Editorial typography" },
-      { src: "assets/img/work/detail-03.svg", alt: "Printed matter", caption: "Subscriber kit" },
-    ],
-  },
-  {
-    slug: "lumen",
-    title: "Lumen Skincare",
-    client: "Lumen Labs",
-    year: "2025",
-    category: "Packaging",
-    role: "Packaging & brand design",
-    services: ["Packaging system", "Label design", "Brand guidelines"],
-    summary:
-      "A calm packaging system for a minimalist skincare line, somewhere between clinical and poetic.",
-    cover: "assets/img/work/lumen-cover.svg",
-    coverAlt: "Three Lumen skincare containers in white, navy and red",
-    description: [
-      {
-        heading: "The brief",
-        text:
-          "Lumen makes only five products, each with fewer than ten ingredients. The packaging had to say 'less, but better' without looking cold or anonymous on a crowded shelf.",
-      },
-      {
-        heading: "The approach",
-        text:
-          "One colour per product family and a typographic label that puts the ingredient list first. Every element sits on a shared grid, so new products slot into the system without a redesign.",
-      },
-      {
-        heading: "The outcome",
-        text:
-          "The range launched in 40 concept stores and won a packaging award in its first year.",
-      },
-    ],
-    gallery: [
-      { src: "assets/img/work/detail-01.svg", alt: "Colour palette swatches", caption: "Product colour coding", wide: true },
-      { src: "assets/img/work/detail-03.svg", alt: "Printed matter", caption: "Retail inserts" },
-      { src: "assets/img/work/detail-02.svg", alt: "Typeface specimen", caption: "Label typography" },
-    ],
-  },
-  {
-    slug: "cine-sur",
-    title: "Festival de Cine Sur",
-    client: "Asociación Cine Sur",
-    year: "2024",
+    slug: "seisa-30",
+    title: "SEISA, 30 Years",
+    client: "SEISA, Security Services",
+    year: "2018",
     category: "Campaign",
-    role: "Campaign design",
-    services: ["Campaign identity", "Posters", "Motion", "Social media"],
+    discipline: "Campaign, logo & brand manual",
+    role: "Lead designer & creative director",
+    services: ["Campaign concept", "Anniversary logo", "Campaign manual", "Promotional applications"],
     summary:
-      "The visual campaign for a coastal film festival celebrating independent cinema from the south.",
-    cover: "assets/img/work/sur-cover.svg",
-    coverAlt: "Festival poster: a white sun setting over the sea on a red background",
+      "Anniversary campaign for SEISA's 30th year, with its own logo, campaign manual and promotional applications.",
+    cover: "assets/img/work/seisa-30/cover.jpg",
+    hero: "assets/img/work/seisa-30/hero.jpg",
+    coverAlt: "A large grey number 30 framing a SEISA technician working above Havana",
     description: [
       {
-        heading: "The brief",
+        heading: "Overview",
         text:
-          "For its 10th edition the festival wanted a campaign that captured the light of the coast at dusk, and that would work equally well on a five-metre banner and a phone screen.",
+          "A campaign celebrating three decades of SEISA under the line \"…con toda seguridad\" (with complete safety). The number 30 opens a window onto Havana and the people behind the service.",
+      },
+      {
+        heading: "Scope",
+        text:
+          "Anniversary logo, a campaign manual covering the briefing, typography, colour and supporting graphics, and a full set of promotional applications: wallpapers, T-shirts, notebooks, planners, greeting cards, folders, business cards and pens.",
+      },
+      {
+        heading: "Recognition",
+        text: "Graphic Design Award, Havana International Fair 2018.",
+      },
+    ],
+    gallery: [
+      { src: "assets/img/work/seisa-30/01.jpg", alt: "Pages of the SEISA 30 Years campaign manual", caption: "Campaign manifesto & brand manual", wide: true },
+      { src: "assets/img/work/seisa-30/02.jpg", alt: "SEISA 30 Years promotional items", caption: "Brand promotional applications", wide: true },
+    ],
+  },
+  {
+    slug: "seisa-transforma",
+    title: "SEISA se transforma",
+    client: "SEISA, Security Services",
+    year: "2022",
+    category: "Campaign",
+    discipline: "Campaign, illustration & editorial design",
+    role: "Creative director",
+    services: ["Campaign logo", "Brochure & manifesto", "Annual Report document system", "Infographics", "Social media"],
+    summary:
+      "An internal campaign that tells the story of SEISA's transformation through an illustrated isometric world.",
+    cover: "assets/img/work/seisa-transforma/cover.jpg",
+    hero: "assets/img/work/seisa-transforma/hero.jpg",
+    coverAlt: "Six illustrated covers for SEISA's 2021 Annual Report documents",
+    description: [
+      {
+        heading: "Overview",
+        text:
+          "Logo, brochure and campaign manifesto for \"SEISA se transforma\" (SEISA is transforming), plus the document system for the 2021 Annual Report and posts for social media.",
       },
       {
         heading: "The approach",
         text:
-          "A single image, a sun dissolving into the sea, drawn with just a circle and a series of lines. The motif animates for social media and breaks into a flexible set of graphics for wayfinding and merchandise.",
+          "Each change in the company is a stop along a road: SEISA partners, expands, goes digital, sustains itself and grows. Vector isometric illustration made the scenes quick to build and modify, so the campaign could keep growing with each new publication.",
       },
       {
-        heading: "The outcome",
+        heading: "Infographics",
         text:
-          "The festival had its best attendance on record, and the poster was picked up by the city for its summer cultural programme.",
+          "The same visual language extends to a series of infographics explaining SEISA's services, from fire and lightning protection to remote monitoring and e-commerce.",
       },
     ],
     gallery: [
-      { src: "assets/img/work/detail-04.svg", alt: "Graphic pattern", caption: "Campaign pattern", wide: true },
-      { src: "assets/img/work/detail-03.svg", alt: "Printed matter", caption: "Programme & tickets" },
-      { src: "assets/img/work/detail-02.svg", alt: "Typeface specimen", caption: "Display typography" },
+      { src: "assets/img/work/seisa-transforma/01.jpg", alt: "Back of the illustrated campaign manifesto", caption: "Campaign manifesto, back", wide: true },
+      { src: "assets/img/work/seisa-transforma/02.jpg", alt: "Six illustrated report covers", caption: "Covers for the 2021 Annual Report document system", wide: true },
+      { src: "assets/img/work/seisa-transforma/03.jpg", alt: "Six isometric infographics about SEISA services", caption: "Infographics", wide: true },
+      { src: "assets/img/work/seisa-transforma/04.jpg", alt: "Close-up of the isometric infographics", caption: "Infographics", wide: true },
     ],
   },
   {
-    slug: "oda",
-    title: "Oda Cerámica",
-    client: "Oda Studio",
-    year: "2024",
+    slug: "cubadeportes",
+    title: "Cubadeportes Website",
+    client: "Cubadeportes S.A., INDER, Cuba",
+    year: "2019",
+    category: "Digital",
+    discipline: "UX/UI design",
+    role: "UX/UI designer",
+    services: ["UX design", "UI design", "Website"],
+    summary:
+      "Website for Cubadeportes, which brings Cuban sports expertise, training programmes and events to clients around the world.",
+    cover: "assets/img/work/cubadeportes/cover.jpg",
+    hero: "assets/img/work/cubadeportes/hero.jpg",
+    coverAlt: "Pages of the Cubadeportes website on a red background",
+    description: [
+      {
+        heading: "Overview",
+        text:
+          "UX and UI design for Cubadeportes S.A., the sports services company of INDER, Cuba's national sports institute.",
+      },
+      {
+        heading: "The design",
+        text:
+          "The site brings together technical assistance, training programmes, specialised facilities, events and hotel offers. Bold diagonal shapes in red and blue carry the energy of sport onto every page.",
+      },
+    ],
+    gallery: [
+      { src: "assets/img/work/cubadeportes/01.jpg", alt: "Cubadeportes events page", caption: "Events page" },
+      { src: "assets/img/work/cubadeportes/02.jpg", alt: "Cubadeportes technical assistance page", caption: "Technical assistance page" },
+      { src: "assets/img/work/cubadeportes/03.jpg", alt: "Cubadeportes website pages in perspective", caption: "Website pages", wide: true },
+    ],
+  },
+  {
+    slug: "estampa",
+    title: "Estampa Boutique Hotels",
+    client: "Estampa Boutique Hotels, Cuba / Belgium",
+    year: "2019",
+    category: "Editorial",
+    discipline: "Editorial design",
+    role: "Editorial designer",
+    services: ["Catalogue design", "Layout", "Art direction"],
+    summary:
+      "Catalogue for Estampa, a collection of boutique hotels in Cuba where every house has its own story.",
+    cover: "assets/img/work/estampa/cover.jpg",
+    hero: "assets/img/work/estampa/hero.jpg",
+    coverAlt: "Burgundy hardcover Estampa catalogue and an open spread",
+    description: [
+      {
+        heading: "Overview",
+        text:
+          "A hardcover catalogue presenting the collection, \"casas de encanto y anfitriones talentosos\" (charming houses and talented hosts), with spreads dedicated to each hotel.",
+      },
+      {
+        heading: "The design",
+        text:
+          "Postage-stamp seals, handwritten script and a refined serif give the book the feel of a travel journal, while generous photography lets each house speak for itself.",
+      },
+    ],
+    gallery: [
+      { src: "assets/img/work/estampa/01.jpg", alt: "Estampa catalogue spreads for the Napper hotel", caption: "Inner pages", wide: true },
+      { src: "assets/img/work/estampa/02.jpg", alt: "Estampa catalogue spreads for Le Petit Mistinguett", caption: "Inner pages", wide: true },
+      { src: "assets/img/work/estampa/03.jpg", alt: "Several open Estampa catalogues", caption: "Inner pages", wide: true },
+    ],
+  },
+  {
+    slug: "la-reserva",
+    title: "La Reserva Vedado",
+    client: "La Reserva, Cuba / Italy / Belgium",
+    year: "2017",
     category: "Branding",
-    role: "Brand identity",
-    services: ["Logo", "Stationery", "Web design", "Photo direction"],
+    discipline: "Branding & editorial design",
+    role: "Brand & editorial designer",
+    services: ["Logo", "Patterns", "Stationery", "Brochure", "Concierge Book"],
     summary:
-      "A minimal identity for a ceramics studio, built around the small imperfections of handmade work.",
-    cover: "assets/img/work/oda-cover.svg",
-    coverAlt: "Oda Cerámica business cards in navy and white",
+      "Identity and printed matter for a boutique hotel in a restored house in Havana's Vedado district.",
+    cover: "assets/img/work/la-reserva/cover.jpg",
+    hero: "assets/img/work/la-reserva/hero.jpg",
+    coverAlt: "La Reserva Vedado monogram logo over the columns of the hotel entrance",
     description: [
       {
-        heading: "The brief",
+        heading: "Overview",
         text:
-          "Oda's founder throws every piece by hand. She wanted an identity as quiet and tactile as her ceramics, one that wouldn't compete with the work itself.",
+          "A monogram R, drawn as a single continuous line inside a circle, is paired with tile-inspired patterns in sage, gold and burgundy.",
       },
       {
-        heading: "The approach",
+        heading: "Applications",
         text:
-          "A monogram drawn from the circle of the potter's wheel, uncoated papers with blind embossing, and a muted palette. The photography direction uses natural light and a single prop.",
-      },
-      {
-        heading: "The outcome",
-        text:
-          "The online shop now sells out each collection within days, and Oda has been invited to show at two international craft fairs.",
+          "The identity extends to stationery, door hangers, toiletries, a guest brochure and a Concierge Book full of tips for enjoying Havana's culture, nightlife and countryside.",
       },
     ],
     gallery: [
-      { src: "assets/img/work/detail-03.svg", alt: "Stationery suite", caption: "Stationery", wide: false },
-      { src: "assets/img/work/detail-02.svg", alt: "Typeface specimen", caption: "Typography" },
-      { src: "assets/img/work/detail-01.svg", alt: "Colour palette swatches", caption: "Palette", wide: true },
+      { src: "assets/img/work/la-reserva/01.jpg", alt: "La Reserva stationery, door hanger, soap box and notebook", caption: "Various applications", wide: true },
+      { src: "assets/img/work/la-reserva/02.jpg", alt: "La Reserva brochure and Concierge Book", caption: "Brochure and Concierge Book", wide: true },
+      { src: "assets/img/work/la-reserva/03.jpg", alt: "Concierge Book inner pages", caption: "Concierge Book, inner pages", wide: true },
+      { src: "assets/img/work/la-reserva/04.jpg", alt: "More Concierge Book inner pages", caption: "Concierge Book, inner pages", wide: true },
     ],
   },
   {
-    slug: "marea",
-    title: "Marea Wines",
-    client: "Bodegas Marea",
-    year: "2023",
-    category: "Packaging",
-    role: "Label & packaging design",
-    services: ["Label design", "Packaging", "Illustration"],
+    slug: "ohlala",
+    title: "Ohlala! Café Bistrot",
+    client: "Ohlala Café Bistrot, Cuba / Panama",
+    year: "2018",
+    category: "Branding",
+    discipline: "Illustration, branding & website",
+    role: "Brand designer & illustrator",
+    services: ["Logotype", "Illustration", "Brand applications", "One-page website"],
     summary:
-      "Label and packaging design for an Atlantic white wine shaped by salt, wind and tide.",
-    cover: "assets/img/work/marea-cover.svg",
-    coverAlt: "Navy Marea wine bottle with a white label and red wave lines",
+      "Inspired by Cuban graphics from the 1930s and 40s, this café's design brings together distinctive elements of Havana and Paris.",
+    cover: "assets/img/work/ohlala/cover.jpg",
+    hero: "assets/img/work/ohlala/hero.jpg",
+    coverAlt: "Ohlala! café cups, paper bag, business cards and VIP card",
     description: [
       {
-        heading: "The brief",
+        heading: "Overview",
         text:
-          "A small family winery on the Atlantic coast was launching its first single-vineyard wine and wanted a bottle that told the story of the sea next to the vines.",
+          "A flowing handwritten logotype paired with a classic serif, vintage stamps and postmarks set the tone of a café where Havana meets Paris.",
       },
       {
-        heading: "The approach",
+        heading: "Illustration",
         text:
-          "A textured label with letterpress wave lines, one for each tide chart of the harvest month. A deep navy capsule and minimal typography let the bottle stand out on the shelf.",
+          "Classic cars, croissants, hot-air balloons and Parisian streetlamps are combined into new engraved-style illustrations, like a vintage car whose bonnet turns into a croissant.",
       },
       {
-        heading: "The outcome",
+        heading: "Applications",
         text:
-          "The first vintage sold out in four months, and the bottle is now the template for the winery's whole range.",
+          "Cups, bags, sugar sachets, VIP cards, coasters, matchboxes, tableware, merchandise and a one-page website.",
       },
     ],
     gallery: [
-      { src: "assets/img/work/detail-04.svg", alt: "Graphic pattern", caption: "Tissue wrap pattern", wide: true },
-      { src: "assets/img/work/detail-02.svg", alt: "Typeface specimen", caption: "Label lettering" },
-      { src: "assets/img/work/detail-03.svg", alt: "Printed matter", caption: "Gift box & card" },
+      { src: "assets/img/work/ohlala/01.jpg", alt: "Ohlala! café brand applications flat lay", caption: "Brand applications", wide: true },
+      { src: "assets/img/work/ohlala/02.jpg", alt: "Ohlala! matchboxes, coasters, cup, tote bag and signage", caption: "Service applications" },
+      { src: "assets/img/work/ohlala/03.jpg", alt: "Ohlala! fan, phone cases, bottle opener, umbrella and door hanger", caption: "Merchandise" },
+      { src: "assets/img/work/ohlala/04.jpg", alt: "Ohlala! one-page website", caption: "One-page website", wide: true },
     ],
+  },
+  {
+    slug: "mr-crypto",
+    title: "Mr. Crypto",
+    client: "Mr Crypto, USA",
+    year: "2018",
+    category: "Digital",
+    discipline: "Illustration, brand, website & 2D animation",
+    role: "Designer & illustrator",
+    services: ["Brand", "Illustration", "Website", "2D animation"],
+    summary: "An online game for buying and earning cryptocurrencies, especially Ethereum.",
+    cover: "assets/img/work/mr-crypto/cover.jpg",
+    hero: "assets/img/work/mr-crypto/hero.jpg",
+    coverAlt: "Mr. Crypto website with a floating neon isometric city",
+    description: [
+      {
+        heading: "Overview",
+        text:
+          "Brand, illustration, website and 2D animation for a game of skill in which two teams compete to predict the prices of major cryptocurrencies.",
+      },
+      {
+        heading: "The design",
+        text:
+          "Floating isometric cities, neon gradients and gem-like level badges create a futuristic universe that carries through to the dashboard, rankings and even the error pages.",
+      },
+    ],
+    gallery: [{ src: "assets/img/work/mr-crypto/01.jpg", alt: "Mr. Crypto dashboard, ranking and error pages", caption: "Website", wide: true }],
+  },
+  {
+    slug: "que-bola",
+    title: "Qué Bolá Havana",
+    client: "Qué Bolá Habana agency, USA",
+    year: "2018",
+    category: "Branding",
+    discipline: "Branding, website, editorial & social media",
+    role: "Brand & web designer",
+    services: ["Brand identity", "Website", "Flyers & banners", "Brand manual", "Social media"],
+    summary:
+      "Identity and website for a platform that books cultural experiences with locals in Havana.",
+    cover: "assets/img/work/que-bola/cover.jpg",
+    hero: "assets/img/work/que-bola/hero.jpg",
+    coverAlt: "Qué Bolá Havana flyers with the hand-lettered logo over the Capitolio",
+    description: [
+      {
+        heading: "Overview",
+        text:
+          "Brand, website, flyers, banners and social media for Qué Bolá Havana, which offers tours, festivals and people-to-people experiences with locals.",
+      },
+      {
+        heading: "The design",
+        text:
+          "A playful hand-lettered logo, a bright palette of turquoise, orange and red, and an expressive script typeface capture the warmth of a Cuban greeting.",
+      },
+    ],
+    gallery: [
+      { src: "assets/img/work/que-bola/01.jpg", alt: "Qué Bolá Havana website home page", caption: "Website, home", wide: true },
+      { src: "assets/img/work/que-bola/02.jpg", alt: "Qué Bolá Havana about page and web banners", caption: "Website and banners", wide: true },
+      { src: "assets/img/work/que-bola/03.jpg", alt: "Qué Bolá Havana brand manual spreads", caption: "Brand manual", wide: true },
+    ],
+  },
+  {
+    slug: "ritmo",
+    title: "Ritmo Café Cocodrilo",
+    client: "Palmares S.A., Cuba",
+    year: "2017",
+    category: "Branding",
+    discipline: "Branding & interior design",
+    role: "Brand & interior designer",
+    services: ["Logotype", "Menu", "Interior design"],
+    summary: "Identity and interior design for a live music café.",
+    cover: "assets/img/work/ritmo/cover.jpg",
+    hero: "assets/img/work/ritmo/hero.jpg",
+    coverAlt: "Ritmo Café Cocodrilo logo over a black and white photo of a stage microphone",
+    description: [
+      {
+        heading: "Overview",
+        text:
+          "A logotype with a rippling, sound-wave rhythm and a glitch effect captures the energy of live music, carried through to the menu.",
+      },
+      {
+        heading: "Interior design",
+        text:
+          "The space brings the identity to life with flowing bands of light across the ceiling, turquoise accents and a backlit bar.",
+      },
+    ],
+    gallery: [
+      { src: "assets/img/work/ritmo/01.jpg", alt: "Ritmo Café Cocodrilo menu", caption: "Menu", wide: true },
+      { src: "assets/img/work/ritmo/02.jpg", alt: "Interior render of the café with turquoise backlit bar", caption: "Interior design", wide: true },
+      { src: "assets/img/work/ritmo/03.jpg", alt: "Interior render of the bar counter and stools", caption: "Interior design", wide: true },
+      { src: "assets/img/work/ritmo/04.jpg", alt: "Interior render of the ceiling light bands", caption: "Interior design", wide: true },
+    ],
+  },
+  {
+    slug: "viera",
+    title: "Viera Academy",
+    client: "Viera Academy, USA",
+    year: "2016",
+    category: "Digital",
+    discipline: "UI/UX & character design",
+    role: "UI/UX designer",
+    services: ["UI design", "UX design", "Character design"],
+    summary:
+      "A learning platform for students, tutors and parents, specialising in SAT, PSAT and ACT test preparation.",
+    cover: "assets/img/work/viera/cover.jpg",
+    hero: "assets/img/work/viera/hero.jpg",
+    coverAlt: "Screens of the Viera Academy learning platform",
+    description: [
+      {
+        heading: "Overview",
+        text:
+          "UI/UX and character design for an online academy. Game mechanics such as head-to-head challenges, rankings and superhero avatars keep students motivated while they prepare for their exams.",
+      },
+    ],
+    gallery: [],
+  },
+  {
+    slug: "torreon",
+    title: "Torreón de La Chorrera",
+    client: "Palmares S.A., Cuba",
+    year: "2015",
+    category: "Branding",
+    discipline: "Branding & interior design",
+    role: "Brand & interior designer",
+    services: ["Logo", "Identity", "Interior design"],
+    summary: "Identity for a restaurant inside a historic colonial tower in Havana.",
+    cover: "assets/img/work/torreon/cover.jpg",
+    hero: "assets/img/work/torreon/hero.jpg",
+    coverAlt: "Red heraldic crest logo for Torreón de La Chorrera restaurant",
+    description: [
+      {
+        heading: "Overview",
+        text:
+          "A heraldic crest with towers and lions, a crown and a classic serif wordmark reflect the history of the colonial tower that houses the restaurant.",
+      },
+    ],
+    gallery: [],
   },
 ];

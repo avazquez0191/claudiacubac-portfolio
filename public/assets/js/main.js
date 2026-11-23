@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Claudia C. Cabrera — Portfolio scripts
+   Claudia Cuba — Portfolio scripts
    No build step, no dependencies.
    ========================================================================== */
 
@@ -130,13 +130,13 @@
       '<article class="work-card" data-reveal style="--delay:' + (i % 2) * 0.08 + 's">' +
         '<a class="work-card__link" href="' + projectUrl(p) + '">' +
           '<div class="work-card__media">' +
-            '<img src="' + esc(p.cover) + '" alt="' + esc(p.coverAlt || p.title) + '" width="1200" height="1500" loading="lazy" decoding="async">' +
+            '<img src="' + esc(p.cover) + '" alt="' + esc(p.coverAlt || p.title) + '" width="1200" height="900" loading="lazy" decoding="async">' +
             '<span class="work-card__cta">View project ' + ARROW + "</span>" +
           "</div>" +
           '<div class="work-card__meta">' +
             '<h3 class="work-card__title">' + esc(p.title) + "</h3>" +
             '<span class="work-card__year">' + esc(p.year) + "</span>" +
-            '<p class="work-card__cat">' + esc(p.category) + "</p>" +
+            '<p class="work-card__cat">' + esc(p.discipline || p.category) + "</p>" +
           "</div>" +
         "</a>" +
       "</article>"
@@ -159,9 +159,11 @@
     if (countEl) countEl.textContent = "(" + String(PROJECTS.length).padStart(2, "0") + ")";
 
     if (filtersEl) {
+      // Use the preferred order from data.js, then any extra categories, skipping empty ones
+      var used = PROJECTS.map(function (p) { return p.category; });
       var categories = ["All"];
-      PROJECTS.forEach(function (p) {
-        if (categories.indexOf(p.category) === -1) categories.push(p.category);
+      (SITE.categories || []).concat(used).forEach(function (c) {
+        if (categories.indexOf(c) === -1 && used.indexOf(c) !== -1) categories.push(c);
       });
 
       filtersEl.innerHTML = categories
@@ -349,7 +351,7 @@
     root.innerHTML =
       '<header class="project-hero container">' +
         '<a class="back-link" href="index.html#work">' + ARROW + " All work</a>" +
-        '<p class="eyebrow" data-reveal>' + esc(p.category) + " · " + esc(p.year) + "</p>" +
+        '<p class="eyebrow" data-reveal>' + esc(p.discipline || p.category) + " · " + esc(p.year) + "</p>" +
         '<h1 class="project-title" data-reveal style="--delay:.06s">' + esc(p.title) + "</h1>" +
         '<p class="project-summary" data-reveal style="--delay:.12s">' + esc(p.summary) + "</p>" +
         '<dl class="project-meta" data-reveal style="--delay:.18s">' +
@@ -360,7 +362,7 @@
         "</dl>" +
       "</header>" +
       '<figure class="project-cover container" data-reveal>' +
-        '<img src="' + esc(p.cover) + '" alt="' + esc(p.coverAlt || p.title) + '" width="1200" height="1500" fetchpriority="high">' +
+        '<img src="' + esc(p.hero || p.cover) + '" alt="' + esc(p.coverAlt || p.title) + '" fetchpriority="high">' +
       "</figure>" +
       (blocks ? '<section class="project-body container" aria-label="Case study">' + blocks + "</section>" : "") +
       (gallery ? '<section class="project-gallery container" aria-label="Project images">' + gallery + "</section>" : "") +
